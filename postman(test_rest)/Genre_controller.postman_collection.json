@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "84d45797-2b76-4940-be24-fdbba93c80cb",
+		"name": "Genre controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\" : null,\r\n  \"name\" : \"thriler\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Genres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update specific Genre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\" : null,\r\n  \"name\" : \"Horor\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres/update/komedie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres",
+						"update",
+						"komedie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Specific Genre by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres/komedie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres",
+						"komedie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Specific Genre by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres/id/1851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres",
+						"id",
+						"1851"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGenreTitles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/implementation/api/genres/titles/1851",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"implementation",
+						"api",
+						"genres",
+						"titles",
+						"1851"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
